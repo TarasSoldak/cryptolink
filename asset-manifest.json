@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cryptolink/static/css/main.f5d2f7ea.css",
+    "main.js": "/cryptolink/static/js/main.d6771c42.js",
+    "static/media/iPhone.png": "/cryptolink/static/media/iPhone.73276939ec207c51f7f9.png",
+    "static/media/ellipses.png": "/cryptolink/static/media/ellipses.7dccf3fb328e5af36f53.png",
+    "index.html": "/cryptolink/index.html",
+    "main.f5d2f7ea.css.map": "/cryptolink/static/css/main.f5d2f7ea.css.map",
+    "main.d6771c42.js.map": "/cryptolink/static/js/main.d6771c42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5d2f7ea.css",
+    "static/js/main.d6771c42.js"
+  ]
+}
