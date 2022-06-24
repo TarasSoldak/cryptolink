@@ -1,0 +1,28 @@
+@import "../../variables";
+
+header {
+    color: $baseTextColor;
+    background-color: $baseBgColor;
+    .header-logo {
+        margin: 0 210px 0 210px;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header-logo-block {
+            display: flex;
+            align-items: center;
+            .logo-text {
+                font-size: $baseFontSize;
+                margin-left: 20px;
+                font-weight: 700;
+            }
+        }
+        .header-link {
+            .header-link-span{
+            font-size: 18px;
+            font-weight: 600;
+            }
+        }
+    }
+}
