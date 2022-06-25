@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/cryptolink/static/css/main.f5d2f7ea.css",
-    "main.js": "/cryptolink/static/js/main.d6771c42.js",
+    "main.css": "/cryptolink/static/css/main.d1d1ba99.css",
+    "main.js": "/cryptolink/static/js/main.e5d07006.js",
+    "static/media/alex-wong.png": "/cryptolink/static/media/alex-wong.69168bfde036cbab3475.png",
+    "static/media/alex.png": "/cryptolink/static/media/alex.331ab3e1208d399b2938.png",
     "static/media/iPhone.png": "/cryptolink/static/media/iPhone.73276939ec207c51f7f9.png",
+    "static/media/phone-illustration5.png": "/cryptolink/static/media/phone-illustration5.e877c01ecb5e973174fa.png",
+    "static/media/iPhone2.png": "/cryptolink/static/media/iPhone2.a1727f2a25904219496f.png",
+    "static/media/wong.png": "/cryptolink/static/media/wong.6027e92fea5eac9bede9.png",
     "static/media/ellipses.png": "/cryptolink/static/media/ellipses.7dccf3fb328e5af36f53.png",
+    "static/media/ellipse3.png": "/cryptolink/static/media/ellipse3.f16413cb7983f7d3b1a7.png",
     "index.html": "/cryptolink/index.html",
-    "main.f5d2f7ea.css.map": "/cryptolink/static/css/main.f5d2f7ea.css.map",
-    "main.d6771c42.js.map": "/cryptolink/static/js/main.d6771c42.js.map"
+    "main.d1d1ba99.css.map": "/cryptolink/static/css/main.d1d1ba99.css.map",
+    "main.e5d07006.js.map": "/cryptolink/static/js/main.e5d07006.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5d2f7ea.css",
-    "static/js/main.d6771c42.js"
+    "static/css/main.d1d1ba99.css",
+    "static/js/main.e5d07006.js"
   ]
 }
