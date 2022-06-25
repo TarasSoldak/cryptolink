@@ -1,0 +1,32 @@
+@import "../../variables";
+
+.card-block{
+    
+    background: 
+    url('../../images/alex.png')-250px 100%/cover no-repeat ,
+    url('../../images/wong.png') 950px 110px no-repeat,
+     url('../../images/alex-wong.png') 100%/cover no-repeat;
+    height: 1200px;
+    .card-block-text{
+        margin-left: 210px;
+        padding-top: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        color:$baseTextColor ;
+        max-width: 680px;
+        h2{
+           @extend%h2 
+        }
+        p{
+            font-size: $baseFontSize;
+            font-weight: $baseFontWeight;  
+            padding-right: 60px; 
+        }
+        .arrow{
+            background: url('../../images/arrow.png') 440px 11px no-repeat;
+            margin-top: 50px;
+            font-weight: 600;
+        }
+    }
+}

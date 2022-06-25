@@ -1,4 +1,31 @@
 $baseBgColor: #16181d;
 $baseTextColor: #ffff;
 $baseFontSize: 22px;
-$baseFontWeight: medium;
+$baseFontWeight: 600;
+
+
+%buttons{
+    display: inline-block;
+    position: relative;
+    background-color: #24262b;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: $baseTextColor;
+    padding: 18px 80px 18px 50px;
+    border: none;
+    margin-right: 30px;
+    border-radius: 9px;
+    letter-spacing: 1.5px;
+ 
+}
+%h2{
+    font-size: 64px;
+    font-weight: bold;
+}
+%p{
+    font-size: $baseFontSize;
+    font-weight: $baseFontWeight;
+    color: #708599;
+    line-height: 2;
+}

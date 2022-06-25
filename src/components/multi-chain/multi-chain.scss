@@ -1,0 +1,51 @@
+@import "../../variables";
+
+.chain-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .chain-block-text {
+        margin: 0 450px;
+        text-align: center;
+        h2 {
+            @extend%h2;
+            margin-bottom: 36px;
+        }
+        p {
+            @extend%p;
+        }
+    }
+    .chain-block-coin{
+        margin-top: 140px;
+        padding-bottom: 500px;
+        .coin-list{
+            display: flex;
+            gap: 20px;
+            font-size: 28px;
+            font-weight: $baseFontWeight;
+            
+                
+                .coin-item{
+                    position: relative;
+                    background-repeat: no-repeat;
+                    
+                    .coin{
+                        display: inline-block;
+                        position: absolute;
+                        top: -20px;
+                        left: 93px;
+                    }
+                    .coin-name{
+                        font-weight: 600;
+                        position: absolute;
+                        bottom: 90px;
+                        left: 98px;
+                    }
+                    .terra, .solana{
+                        left: 120px;
+                    }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import "../../variables";
+
+.crypto {
+    margin-top: 250px;
+    .crypto-text {
+        h2 {
+            text-align: center;
+            @extend%h2;
+            span{
+                color: #00AD6F;
+            }
+        }
+    }
+    .crypto-button{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 90px;
+    }
+
+.crypto-menu{
+    display: flex;
+    justify-content: center;
+    .menu-img{
+        margin-top: 150px;
+    
+    }
+.menu-list{
+    align-self:center;
+    flex: 2;
+
+    ul{
+        margin-left: 210px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        li{
+            padding-left: 120px;
+            padding-top: 20px;
+            h3{
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 18px;
+                color: #708599;
+                font-weight: $baseFontWeight;
+
+            }
+        }
+        .one{
+            background: url('../../images/Frame\ 28.png') no-repeat;
+        }
+        .two{
+            background: url('../../images/Frame\ 29.png') no-repeat;
+        }
+        .three{
+            background: url('../../images/Frame\ 30.png') no-repeat;
+        }
+    }
+}
+  
+}
+
+}

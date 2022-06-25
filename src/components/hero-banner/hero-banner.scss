@@ -22,18 +22,7 @@
       margin-bottom: 100px;
     }
     .banner-button {
-      display: inline-block;
-      position: relative;
-      background-color: #24262b;
-      text-transform: uppercase;
-      font-size: 19px;
-      font-weight: 700;
-      color: $baseTextColor;
-      padding: 18px 80px 18px 50px;
-      border: none;
-      margin-right: 30px;
-      border-radius: 9px;
-      letter-spacing: 2px;
+      @extend %buttons;
       &::after {
         content: url(../../images/Vector.png);
         position: absolute;

@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.swap-block {
+    position: relative;
+    margin: 220px 0 150px 0;
+    display: flex;
+    align-items: center;
+    .swap-block-img,
+    .swap-img {
+        display: inline-block;
+        position: relative;
+        z-index: 3;
+        &::before {
+            content: url("../../images/ellipse2.png");
+            position: absolute;
+            left: 0;
+            top: 140px;
+        }
+        &::after {
+            content: url("../../images/ellipse3.png");
+            position: absolute;
+            left: 0;
+            top: 250px;
+            z-index: 1;
+        }
+    }
+    .swap-block-text {
+        position: absolute;
+        top: 220px;
+        right: 210px;
+        width: 680px;
+        h2 {
+            margin-bottom: 50px;
+            @extend%h2;
+        }
+        .swap-text {
+            margin-bottom: 80px;
+            @extend%p;
+        }
+        .swap-button {
+            @extend %buttons;
+            &::after {
+                content: url(../../images/Vector2.png);
+                position: absolute;
+                bottom: 16px;
+                right: 52px;
+            }
+        }
+    }
+}

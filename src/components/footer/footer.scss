@@ -1,0 +1,45 @@
+@import "../../variables";
+
+footer {
+    margin-top: 80px;
+    background-color: $baseBgColor;
+    .footer-block {
+        color: $baseTextColor;
+        margin: 0 210px 0 210px;
+        padding-top: 200px;
+        p {
+            margin-bottom: 34px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .footer-block-info {
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            h2 {
+                @extend%h2;
+            }
+            .footer-social-links {
+                img {
+                    display: block;
+                    margin-left: 30px;
+                }
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .info-items-block {
+            margin-top: 100px;
+            padding-bottom: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}
