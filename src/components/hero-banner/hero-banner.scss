@@ -40,11 +40,12 @@
       }
     }
   }
-  .banner-block-img  {
+  .banner-block-img {
+    display: flex;
     position: relative;
-    .banner-img{
-    position: relative;
-    z-index: 2;
+    .banner-img {
+      position: relative;
+      z-index: 2;
     }
     .banner-img-ellipse {
       display: inline-block;
@@ -52,6 +53,102 @@
       bottom: 0;
       right: 0;
       z-index: 1;
+    }
+  }
+}
+@media (max-width: 1799px) {
+  .banner {
+    .banner-block {
+      margin-left: 100px;
+      h1 {
+        font-size: 70px;
+      }
+      .block-text {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1599px) {
+  .banner {
+    .banner-block {
+      h1 {
+        font-size: 60px;
+      }
+      .block-text {
+        font-size: 16px;
+      }
+      .banner-block-img {
+        img {
+          width: 600px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1439px) {
+  .banner {
+    .banner-block {
+      margin-left: 90px;
+      .banner-block-text {
+        .banner-button {
+          padding: 14px 50px 14px 30px;
+          font-size: 15px;
+          &::after {
+            content: url(../../images/Vector.png);
+            position: absolute;
+            bottom: 11px;
+            right: 26px;
+          }
+        }
+        .green {
+          background-color: #00ad6f;
+          padding: 14px 50px 14px 30px;
+          font-size: 15px;
+          &::after {
+            content: url(../../images/Vector2.png);
+            position: absolute;
+            bottom: 11px;
+            right: 26px;
+          }
+        }
+
+        h1 {
+          font-size: 50px;
+          margin-top: 70px;
+        }
+        .block-text {
+          font-size: 14px;
+        }
+      }
+      .banner-block-img {
+        img {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner {
+    .banner-block {
+      margin-left: 40px;
+      .banner-block-text {
+        h1 {
+          font-size: 35px;
+          margin-top: 40px;
+          margin-bottom: 50px;
+        }
+        .block-text {
+          font-size: 12px;
+        }
+      }
+      .banner-block-img {
+        img {
+          width: 400px;
+        }
+      }
     }
   }
 }

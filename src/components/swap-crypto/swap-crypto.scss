@@ -5,25 +5,26 @@
     margin: 220px 0 150px 0;
     display: flex;
     align-items: center;
-    .swap-block-img,
+    .swap-block-img{
+    &::before {
+        content: url("../../images/ellipse2.png");
+        position: absolute;
+        left: 0;
+        top: 140px;
+    }
+    &::after {
+        content: url("../../images/ellipse3.png");
+        position: absolute;
+        left: 0;
+        top: 250px;
+        z-index: 1;
+    }
     .swap-img {
         display: inline-block;
         position: relative;
         z-index: 3;
-        &::before {
-            content: url("../../images/ellipse2.png");
-            position: absolute;
-            left: 0;
-            top: 140px;
-        }
-        &::after {
-            content: url("../../images/ellipse3.png");
-            position: absolute;
-            left: 0;
-            top: 250px;
-            z-index: 1;
-        }
     }
+}
     .swap-block-text {
         position: absolute;
         top: 220px;
@@ -40,11 +41,159 @@
         .swap-button {
             @extend %buttons;
             &::after {
-                content: url(../../images/Vector2.png);
+                content: url('../../images/Vector2.png');
                 position: absolute;
                 bottom: 16px;
                 right: 52px;
             }
+        }
+    }
+}
+@media (max-width: 1799px){
+    .swap-block{
+    .swap-block-text {
+        position: absolute;
+        top: 180px;
+        right: 100px;
+        h2 {
+            margin-bottom: 30px;
+        }
+        .swap-text {
+          margin-bottom: 60px;
+
+        }
+    }
+    .swap-block-img{
+        &::before {
+            content: url("../../images/ellipse2.png");
+            position: absolute;
+            left: -70px;
+            top: 140px;
+        }
+        &::after {
+            content: url("../../images/ellipse3.png");
+            position: absolute;
+            left: -150px;
+            top: 250px;
+            z-index: 1;
+        }
+        .swap-img {
+            width: 1200px;
+            display: block;
+            position: relative;
+            z-index: 3;
+            left: -80px;
+        }
+
+    }
+    }
+    }
+ 
+@media (max-width: 1599px) {
+    .swap-block{
+    margin: 110px 0 75px 0;
+    .swap-block-text {
+        position: absolute;
+        top: 220px;
+        right: 70px;
+        .swap-button {
+            padding: 14px 50px 14px 30px;
+            font-size: 15px;
+            &::after {
+                content: url('../../images/Vector2.png');
+                position: absolute;
+                bottom: 11px;
+                right: 26px;
+            }
+        }
+        h2 {
+            margin-bottom: 40px;
+            font-size: 35px;
+        }
+        .swap-text {
+          font-size: 18px;
+          margin-bottom: 50px;
+
+        }
+    }
+        .swap-block-img{
+            &::before {
+                content: url("../../images/ellipse2.png");
+                position: absolute;
+                left: -70px;
+                top: 140px;
+            }
+            &::after {
+                content: url("../../images/ellipse3.png");
+                position: absolute;
+                left: -220px;
+                top: 250px;
+                z-index: 1;
+            }
+            .swap-img {
+                width: 1100px;
+                display: block;
+                position: relative;
+                z-index: 3;
+                left: -70px;
+            }
+        }
+    }
+ 
+}  
+@media (max-width: 1439px) {
+    .swap-block{
+
+        .swap-block-text {
+            top: 220px;
+            right: 40px;
+        }
+    }
+}
+@media(max-width:1359px){
+   .swap-block{
+    .swap-block-img{
+        &::before {
+            left: -120px;
+            top: 50px;
+        }
+        &::after {
+            background-size: 100px;
+            left: -380px;
+            top: 150px;
+            z-index: 1;
+        }
+    }
+    .swap-block-text {
+        position: absolute;
+        top: 150px;
+        right: 25px;
+    }
+    .swap-block-img{
+        .swap-img {
+            width: 900px;
+            display: block;
+            position: relative;
+            z-index: 3;
+            left: -120px;
+        }
+    }
+   }
+    }
+    @media(max-width:1199px){
+        .swap-block{
+        .swap-block-text {
+            h2 {
+                margin-bottom: 20px;
+            }
+            .swap-text {
+              margin-bottom: 50px;
+    
+            }
+
+            top: 130px;
+            right: 50px;
+            width: 450px;
         }
     }
 }

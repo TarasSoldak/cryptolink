@@ -5,47 +5,121 @@
     flex-direction: column;
     align-items: center;
     .chain-block-text {
-        margin: 0 450px;
+        margin: 0 440px;
         text-align: center;
         h2 {
             @extend%h2;
-            margin-bottom: 36px;
+            margin-bottom: 30px;
         }
         p {
             @extend%p;
         }
     }
-    .chain-block-coin{
+    .chain-block-coin {
         margin-top: 140px;
-        padding-bottom: 500px;
-        .coin-list{
+        padding-bottom: 200px;
+        .coin-list {
             display: flex;
             gap: 20px;
             font-size: 28px;
             font-weight: $baseFontWeight;
-            
-                
-                .coin-item{
-                    position: relative;
-                    background-repeat: no-repeat;
-                    
-                    .coin{
-                        display: inline-block;
-                        position: absolute;
-                        top: -20px;
-                        left: 93px;
-                    }
-                    .coin-name{
-                        font-weight: 600;
-                        position: absolute;
-                        bottom: 90px;
-                        left: 98px;
-                    }
-                    .terra, .solana{
-                        left: 120px;
-                    }
-                
+
+            .coin-item {
+                position: relative;
+                background-repeat: no-repeat;
+
+                .coin {
+                    display: inline-block;
+                    position: absolute;
+                    top: -20px;
+                    left: 93px;
+                }
+                .coin-name {
+                    font-weight: 600;
+                    position: absolute;
+                    bottom: 90px;
+                    left: 98px;
+                }
+                .terra,
+                .solana {
+                    left: 120px;
+                }
             }
+        }
+    }
+}
+@media (max-width: 1919px) {
+    .chain-block {
+        .chain-block-text {
+            margin: 0 360px;
+        }
+    }
+}
+@media (max-width: 1799px) {
+    .chain-block {
+        .chain-block-text {
+            margin: 0 300px;
+        }
+    }
+}
+@media (max-width: 1599px) {
+    .chain-block {
+        .chain-block-text {
+            margin: 0 320px;
+            h2 {
+                font-size: 35px;
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .chain-block-coin {
+            .coin-list {
+                .coin-item {
+                    .coin-name {
+                        font-size: 20px;
+                        bottom: 60px;
+                        left: 60px;
+                    }
+                    .terra,
+                    .solana {
+                        left: 80px;
+                    }
+                }
+                .coin-item {
+                    img:nth-child(2) {
+                        width: 230px;
+                    }
+                    .coin {
+                        width: 117px;
+                        top: -20px;
+                        left: 57px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1439px) {
+    .chain-block {
+        .chain-block-text {
+            margin: 0 270px;
+        }
+    }
+}
+@media (max-width: 1359px) {
+    .chain-block {
+        .chain-block-text {
+            margin: 0 200px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .chain-block {
+        .chain-block-text {
+            margin: 0 100px;
         }
     }
 }
